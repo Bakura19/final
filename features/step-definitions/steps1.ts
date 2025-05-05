@@ -1,10 +1,6 @@
-import { Given, When, Then } from '@wdio/cucumber-framework';
+import { When, Then } from '@wdio/cucumber-framework';
 import { expect } from '@wdio/globals'
 import { pageManager } from '../pageobjects/PageManager';
-
-Given('I am on casino Website', async () => {
-    await pageManager.page.open(); 
-});
 
 When('I hover on Promo and then click Statuses', async () => {
     await pageManager.lobbyMenu.selectSectionInPromo('статусы');
